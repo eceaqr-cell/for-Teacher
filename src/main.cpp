@@ -6,4 +6,6 @@ using namespace std;
 int main(){
 
     cout << add(6, 7) <<endl;
+    cout<<"hello world"<<endl;
 }
+
