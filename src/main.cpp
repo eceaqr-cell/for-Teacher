@@ -1,12 +1,32 @@
 #include <iostream>
-#include "demo.hpp"
+#include "ProductManager.hpp"
 
 using namespace std;
 
-int main(){
+int main() {
+    ProductManager manager;
+    int choice;
 
-    cout << add(6, 7) <<endl;
-    cout<<"hello world"<<endl;
-    cout<<"hello world"<<endl;
+    do {
+        cout << "" << endl;
+        cout << "" << endl;
+        cout << "" << endl;
+        cout << "" << endl;
+        cout << " " << endl;
+        cout << "" << endl;
+        cout << "" << endl;
+        cout << ""; cin >> choice;
+
+        switch (choice) {
+            case 1: manager.addProduct(); break;
+            case 2: manager.getAllProducts(); break;
+            case 3: manager.updateProductById(); break;
+            case 4: manager.searchProductByTitle(); break;
+            case 5: manager.deleteProductById(); break;
+            case 0: cout << "" << endl; break;
+            default: cout << "" << endl;
+        }
+    } while (choice != 0);
+
+    return 0;
 }
-
